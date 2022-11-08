@@ -6,11 +6,11 @@ from application.components import predict, read_imagefile
 from application.schema import Symptom
 from application.components.prediction import symptom_check
 
-app_desc = """<h2>Try this app by uploading any image with `predict/image`</h2>
-<h2>Try Covid symptom checker api - it is just a learning app demo</h2>
-<br>by Ismail 😜"""
+app_desc = """<h2>Execution d'une application de Segmentation d'image en Local et en Cloud privée</h2>
+<h2>Partie 2: <u>Execution en Cloud</u></h2>
+<h2>by <u>Ismail Ben Abdelkader</u> </h2> """
 
-app = FastAPI(title='Tensorflow FastAPI Starter Pack', description=app_desc)
+app = FastAPI(title='Execution en Cloud Privée (a Distance)', description=app_desc)
 
 
 @app.get("/", include_in_schema=False)
